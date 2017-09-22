@@ -1,0 +1,18 @@
+<section>
+<h2>Not sure what happened</h2>
+<p>You didn't see nothing, got it?</p>
+<button id="load" onclick="sendAjax()">Try again</button>
+</section>
+<%# <script>
+var test = new XMLHttpRequest();
+test.onreadystatechange = function(){
+    if(test.readystate === 400){
+        document.getElementById('ajax').innerHTML = test.responseText;
+    }
+};
+
+test.open('GET', 'sidebar');
+function sendAJAX(){
+    test.send();
+    document.getElementById("load").style.display = "none";
+}; %>
